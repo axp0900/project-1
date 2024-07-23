@@ -1,5 +1,5 @@
-import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { about } from '../../portfolio'
 import './About.css'
 
@@ -10,7 +10,7 @@ const About = () => {
     <div className='about center'>
       {name && (
         <h1>
-          Hi, I am <span className='about__name'>{name}.</span>
+          Hello, I am <span className='about__name'>{name}.</span>
         </h1>
       )}
 
