@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import IconButton from '@mui/material/IconButton';
 import { useContext, useState } from 'react'
 import { ThemeContext } from '../../contexts/theme'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const { homepage, title } = header
@@ -17,7 +18,7 @@ const Header = () => {
     <header className='header center'>
       <h3>
         {homepage ? (
-          <a href={homepage} className='link'>
+          <Link to="/" className='link'>
             <IconButton
               type='button'
               onClick={toggleTheme}
@@ -26,7 +27,7 @@ const Header = () => {
             >
               <HomeIcon style={iconStyles} />
             </IconButton>
-          </a>
+          </Link>
         ) : (
           title
         )}
