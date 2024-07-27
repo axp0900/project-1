@@ -14,11 +14,17 @@ const Header = () => {
     color: themeName === 'dark' ? '#bdbddd' : '#2978b5', // Change color based on theme
     fontSize: '2rem' // Adjust size as needed
   };
+
+  const navigateHome = (e) => {
+    e.preventDefault();
+    window.location.href = `${process.env.PUBLIC_URL}/`;
+  };
+
   return (
     <header className='header center'>
       <h3>
         {homepage ? (
-          <Link to="/" className='link'>
+          <a href={`${process.env.PUBLIC_URL}/`} className='link' onClick={navigateHome}>
             <IconButton
               type='button'
               onClick={toggleTheme}
@@ -27,7 +33,7 @@ const Header = () => {
             >
               <HomeIcon style={iconStyles} />
             </IconButton>
-          </Link>
+          </a>
         ) : (
           title
         )}
