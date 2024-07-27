@@ -23,27 +23,17 @@ const projects = [
   {
     name: 'Project 1',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Develop a machine learning model to accurately classify breast cancer as malignant or benign using a decision treealgorithm. The model aims to assist in early diagnosis and treatment planning by leveraging the interpretability and effectiveness of decision trees',
+    stack: ['Python'],
+    sourceCode: 'https://github.com/axp0900/DecisionTree'
   },
   {
-    name: 'Project 2',
+    name: 'Image Captioning Model',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-  },
-  {
-    name: 'Project 3',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-  },
+      'Developed a deep learning model to automatically generate descriptive captions for images, combining Convolutional Neural Networks (CNN) for feature extraction and Long Short-Term Memory (LSTM) networks for sequence generation',
+    stack: ['Python', 'PyTorch'],
+    sourceCode: 'https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning'
+  }
 ]
 
 const skills = [
@@ -55,17 +45,20 @@ const skills = [
   'TypeScript',
   'React',
   'Java',
-  'SASS',
+  'SQL(Postgres)',
   'Material UI/Primereact',
-  'Git',
+  'Gi/Gitlab',
   'CI/CD',
   'Jest',
-  'Enzyme',
+  'C/C++',
+  'Node/Express.js',
+  'FastAPI'
+
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'anipappuwork@gmail.com',
 }
 
 export { header, about, projects, skills, contact }
